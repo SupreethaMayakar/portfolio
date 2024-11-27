@@ -1,0 +1,238 @@
+html{
+    box-sizing: border-box;
+}
+*,*::before,*after{
+    box-sizing: inherit;
+}
+
+
+html,body {
+    height: 100%;
+}
+
+body {
+    background: #f6f6f6;
+    margin: 0;
+    font-family: "Outfit", serif;
+}
+h1,h2,h3{
+    font-family:"Caveat",cursive;
+}
+
+.content-wrapper{
+    margin: 30px auto;
+    max-width: 900px;
+    padding: 30px;
+}
+body {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.header {
+    font-size: 20px;
+    text-align: center;
+}
+
+.container {
+    display: block;
+    padding: 10px;
+}
+
+/* Tablet (768px and larger) */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+}
+
+/* Desktop (1024px and larger) */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    .header {
+        font-size: 24px;
+        text-align: left;
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column; /* Stack items on mobile */
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Side-by-side on larger screens */
+    }
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for desktops */
+    }
+}
+
+
+/* Links------------------ */
+a{
+    color: #3c8453;
+}
+
+/*Pseudo elements*/
+a:hover{
+    color: #bcaabc;
+}
+
+.btn a{
+    color: #f6f6f6;
+    text-decoration: none;
+}
+
+.btn{
+    background: #3c8543;
+    color: #f6f6f6;
+    text-decoration:none;
+    padding: 10px 20px;
+}
+
+/* HOME ---------------------- */
+.home {
+    background-image: url(co.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+.container{
+    padding: 30px;
+    background: rgb(255  255 255/0.9);
+}
+/* RESUME -------------------- */
+.resume header::before{
+    background-image: url(wp.webp);
+    background-size: cover;
+    display: block;
+    height: 400px;
+    content: "";
+}
+
+.resume-section{
+    margin-bottom: 50px;
+}
+
+.resume-section h2{
+    border-bottom: 2px dashed #d3d4d6;
+}
+.resume-section{
+    display: flow-root;
+    margin: 30px 0;
+
+}
+.resume-section img{
+    height: 250px;
+    width: 230px;
+    float: left;
+    margin-right: 10px;
+}
+
+.download-link{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+
+.work-item{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* Profile Summary ------------------- */
+
+
+/* Projects ------------------------- */
+.project-item{
+    display: flow-root;
+    margin: 30px 0;
+}
+
+.project-item img{
+    width: 400px;
+    float: left;
+    margin-right: 10px;
+}
+
+
+/* Education ----------------- */
+
+
+/* Certifications ------------------------- */
+
+
+/* Technical Skills --------------------- */
+
+
+
+/* Achievements ------------------------- */
+
+
+/* Footer ---------------------- */
+footer{
+    background-color: #222;
+    color:#d3d4d6;
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    
+}
+
+footer a{
+    color: #bcaa96;
+}
+
+footer a:hover{
+    color:#3c8453 ;
+}
+
+.socials{
+    list-style-type: none;
+}
+
+.socials li{
+    display:inline-block;
+    margin: 10px;
+}
+
+.socials img{
+    width:32px;
+}
+.socials img:hover{
+    color:beige ;
+}
