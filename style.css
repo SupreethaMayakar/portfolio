@@ -39,61 +39,6 @@ body {
     padding: 10px;
 }
 
-/* Tablet (768px and larger) */
-@media screen and (min-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px;
-    }
-}
-
-/* Desktop (1024px and larger) */
-@media screen and (min-width: 1024px) {
-    body {
-        font-size: 18px;
-    }
-
-    .container {
-        padding: 30px;
-    }
-
-    .header {
-        font-size: 24px;
-        text-align: left;
-    }
-}
-.container {
-    display: flex;
-    flex-direction: column; /* Stack items on mobile */
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        flex-direction: row; /* Side-by-side on larger screens */
-    }
-}
-.container {
-    display: grid;
-    grid-template-columns: 1fr; /* Single column on mobile */
-    gap: 10px;
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .container {
-        grid-template-columns: repeat(3, 1fr); /* Three columns for desktops */
-    }
-}
 
 
 /* Links------------------ */
